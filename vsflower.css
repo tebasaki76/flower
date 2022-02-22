@@ -1,0 +1,615 @@
+@charset "UTF-8";
+body {
+    /* 仮背景　*/
+    background-color: #d9a9a7;
+}
+
+
+/*　メイン　*/
+
+.main {
+    color: #fff;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 12px;
+    background-image: url(images/f-main2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    padding: 150px 0;
+    text-align: center;
+    line-height: 2.5;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+.main p {
+    padding-top: 400px;
+}
+
+.main img {
+    max-width: 130px;
+    height: auto;
+}
+
+.load-fade {
+    opacity: 0;
+    visibility: hidden; /* 非表示にする　*/
+    transition: all 3s; /* 要素の 2 つの状態間の変化　*/
+}
+
+.load-fade.is-show {
+    opacity: 1;
+    visibility: visible; /* 表示する　*/
+}
+
+
+/* サービス内容　*/
+
+.contents {
+    color: #fff;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 15px;
+    background: url(images/f-section1.jpeg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    padding: 70px 40px;
+}
+
+.contents2 {
+    color: #fff;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 15px;
+    background: url(images/f-section2.jpeg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    padding: 70px 40px;
+}
+
+.contents3 {
+    color: #fff;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 15px;
+    background: url(images/f-section3.jpeg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    padding: 70px 40px;
+}
+
+.container {
+    display: flex
+}
+
+h2 {
+    font-weight: normal;
+}
+
+.container p {
+    padding-top: 10px;
+}
+
+
+/* 料金・定期ペース　*/
+
+.price {
+    color: #3F4449;
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #f5f5f5;
+    font-size: 14px;
+    width: 100%;
+    /* height: 85vh; */
+    padding: 7%;
+    text-align: center;
+}
+
+.price p {
+    margin: 1em 0px;
+    position: relative;
+    top: 10px;
+}
+
+.off {
+    color: #fff;
+    background-color: #ef7642;
+    position: relative;
+    padding: 1em;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+
+.off:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    left: 0;
+    width: 0px;
+    height: 0px;
+    margin: auto;
+    border-style: solid;
+    border-color: #ef7642 transparent transparent transparent;
+    border-width: 20px 10px 0 10px;
+}
+
+.big {
+    font-weight: bolder;
+    position: relative;
+    top: -10px;
+    /*　反映しない？？？　*/
+}
+
+.price img {
+    max-width: 200px;
+    height: auto;
+}
+
+.big {
+    font-size: 18px;
+}
+
+.days {
+    color: #3F4449;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 14px;
+    background-color: #fff;
+    width: 100%;
+    /* height: 85vh; */
+    padding: 10%;
+    text-align: center;
+}
+
+.days img {
+    margin-top: 5%;
+    max-width: 180px;
+    height: auto;
+}
+
+.container2 {
+    display: flex
+}
+
+
+/* 商品詳細　*/
+
+.product {
+    color: #3F4449;
+    font-family: 'Noto Sans JP', sans-serif;
+    background-image: url(images/f-section6.jpeg);
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+    background-size: 45%;
+    background-color: #ead5db;
+    width: 100%;
+    height: 110vh;
+}
+
+.kinds {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+    padding-left: 50%;
+}
+
+.product h2 {
+    font-size: 26px;
+    padding-bottom: 15%;
+}
+
+.product h3 {
+    font-size: 22px;
+    line-height: 3.0;
+    font-weight: normal;
+}
+
+.item {
+    max-width: 400px;
+}
+
+
+/* 花器詳細　*/
+
+.vase {
+    color: #3F4449;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 15px;
+    background: url(images/f-section7.jpeg);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: 700px;
+    background-color: #e6e3de;
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+}
+
+.base {
+    width: 50%;
+    height: 120vh;
+}
+
+.rightbase {
+    width: 50%;
+}
+
+.vase h2 {
+    font-size: 26px;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 15px;
+    /**/
+}
+
+.discount {
+    font-weight: bolder;
+    font-size: 14px;
+    background-color: #fff;
+    max-width: 130px;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.text {
+    line-height: 1.7;
+    letter-spacing: 0.05em;
+    padding-top: 15%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.vase img {
+    max-width: 25%;
+}
+
+.name {
+    font-size: 13px;
+    position: relative;
+    top: -25px;
+    text-align: center;
+    width: 25%;
+}
+
+.box {
+    font-size: 14px;
+    font-weight: bolder;
+    border-width: 2px;
+    border-style: solid;
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+}
+
+.onebox {
+    display: flex;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.vprices {
+    margin-left: 10px;
+}
+
+.vprice {
+    font-size: large;
+}
+
+.vprice2 {
+    font-size: smaller;
+}
+
+.footnote {
+    font-size: smaller;
+    margin-top: 20px;
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    margin: 0 auto;
+    padding-top: 15px;
+    /**/
+}
+
+.formname {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+
+/* 要点　*/
+
+.point {
+    color: #3F4449;
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #fff;
+    background-size: cover;
+    text-align: center;
+    padding-top: 8%;
+    width: 100%;
+    height: 65vh;
+}
+
+.icon img {
+    max-width: 80px;
+    height: auto;
+}
+
+li {
+    list-style-type: none;
+}
+
+.point h2 {
+    padding-bottom: 30px;
+    font-size: 26px;
+}
+
+.point h3 {
+    font-size: 22px;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+/* .new {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+} */
+
+
+/* まとめ　*/
+
+.last {
+    color: #3F4449;
+    font-family: 'Noto Sans JP', sans-serif;
+    background-image: url(images/f-section8.jpeg);
+    background-repeat: no-repeat;
+    background-position: 35% 100%;
+    background-size: 550px;
+    background-color: #eee0c5;
+    text-align: center;
+    width: 100%;
+    height: 65vh;
+}
+
+.last img {
+    /* ロゴの大きさ調整　*/
+    max-width: 130px;
+    height: auto;
+    margin-top: 60px;
+    margin-left: 35%;
+}
+
+.last h2 {
+    font-size: 15px;
+    font-weight: lighter;
+    margin-left: 35%;
+}
+
+
+/* フッター　*/
+
+footer {
+    background-color: #3F4449;
+    color: #fff;
+    width: 100%;
+  /*  height: 30vh; */
+    padding-top: 5%;
+    position: relative;
+}
+
+.sns {
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    left: 80%;
+    top: 10%;
+}
+
+.instagram {
+    background-image: radial-gradient(at 20% 120%, orange, #f15a4d 25%, #f13f79 55%, #9933ff 100%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 5px;
+}
+
+a {
+    color: #fff;
+}
+
+.twitter {
+    background-color: #55aced;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 5px;
+}
+
+.company {
+    background-color: #3F4449;
+    color: rgb(145, 145, 145);
+    font-size: 12px;
+    text-align: center;
+    padding: 10% 0 10% 0;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    background-color: #3F4449;
+    line-height: 2.5;
+    padding: 0 0 0 5%;
+    width: 80%;
+}
+
+
+/* タブレット版　*/
+
+@media screen and (max-width: 800px) and (min-width: 600px) {
+    .icon {
+        /* justify-content: space-around; */
+        /*  min-width: 800px; */
+    }
+    .point {
+        height: 100vh;
+    }
+    .icon li {
+        width: 350px;
+    }
+}
+
+
+/* モバイル版　*/
+
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+    .container2 {
+        flex-direction: column;
+    }
+    .days {
+        padding: 20%;
+    }
+    .info {
+        flex-direction: column;
+    }
+    .product {
+        color: #3F4449;
+        font-family: 'Noto Sans JP', sans-serif;
+        background: url(images/f-section6.jpeg) no-repeat left;
+        background-size: 400px;
+        background-color: #ead5db;
+        background-position: 50% 20%;
+        height: 140vh;
+        width: 100%;
+    }
+    .kinds {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0%;
+        text-align: center;
+    }
+    .kinds h2 {
+        font-size: 22px;
+        text-align: center;
+        padding-bottom: 300px;
+    }
+    .kinds h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .kinds p {
+        text-align: left;
+        max-width: 400px;
+    }
+    .vase {
+        color: #3F4449;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 15px;
+        background: url(images/f-section7.jpeg);
+        background-repeat: no-repeat;
+        background-position: 50% 25%;
+        background-size: 370px;
+        background-color: #e6e3de;
+        height: 180vh;
+        display: block;
+    }
+    .base {
+        width: 100%;
+        /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+        /* padding-right: 0%; */
+    }
+    .vase h2 {
+        font-size: 22px;
+    }
+    .text {
+        padding-top: 400px;
+        max-width: 350px;
+    }
+    .form {
+        max-width: 350px;
+    }
+    .formname {
+        max-width: 350px;
+        width: 100%;
+    }
+    .onebox {
+        max-width: 350px;
+        width: 100%;
+    }
+    .footnote {
+        max-width: 350px;
+        width: 100%;
+    }
+    .point {
+        height: 120vh;
+        padding-top: 20%;
+    }
+    .point h2 {
+        font-size: 22px;
+    }
+    .icon h3 {
+        font-size: 20px;
+    }
+    .icon {
+        display: block;
+        margin-top: 20px;
+    }
+    .icon2 {
+        margin-top: 20px;
+    }
+    .icon3 {
+        margin-top: 20px;
+    }
+    .last {
+        height: 85vh;
+        background-size: 370px;
+        background-position: 50% 100%;
+    }
+    .last img {
+        margin: 0;
+        padding-top: 80px;
+    }
+    .last h2 {
+        margin: 0;
+        padding-top: 10px;
+    }
+    .footer {
+      /*  height: 100vh; */
+    }
+    .info{
+        width: 100%;
+    }
+    .sns {
+        left: 70%;
+    }
+
+}
